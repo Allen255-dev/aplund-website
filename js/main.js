@@ -390,6 +390,11 @@ if (navOverlay) {
   navOverlay.addEventListener("click", closeMobileNav);
 }
 
+const drawerClose = document.getElementById("drawerClose");
+if (drawerClose) {
+  drawerClose.addEventListener("click", closeMobileNav);
+}
+
 document.querySelectorAll("#nav a").forEach(link => {
   link.addEventListener("click", closeMobileNav);
 });
